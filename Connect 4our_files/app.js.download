@@ -11,6 +11,7 @@ function loadDOM(){
     playAgain.addEventListener("click",reset) 
     }
 // createBoard function
+
 function createBoard(){ 
     for(let i=0;i<49;i++){ 
     let div =document.createElement("div") 
@@ -24,6 +25,7 @@ function createBoard(){
     }
 
 //clickBoard function
+
 function clickBox(){ 
     let squares =document.querySelectorAll(".board div") 
     let click =parseInt(this.dataset.id) 
@@ -81,6 +83,7 @@ let winningArray = [
 let currentPlayer=1 
 
 //the checkWon function
+
 function checkWon(){
     let squares =document.querySelectorAll(".board div")
     for (let y=0;y<winningArray.length;y++){
@@ -91,14 +94,11 @@ function checkWon(){
       }else if(square.every(q=>squares[q].classList.contains("player-two"))){
       setTimeout(() =>alert("Sienna Wins!"), 200)
       setTimeout(() =>restart.style.display="flex", 500)
-      if(box===42){ 
-        setTimeout(()=>alert("boxes filled"),300)
-        setTimeout(()=>restart.style.display="flex",500) 
-        } 
     }
     }
     }
     function reset(){
         board.innerHTML="" 
         loadDOM() 
+        restart.style.display="none" 
         }

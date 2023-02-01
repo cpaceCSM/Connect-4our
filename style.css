@@ -1,62 +1,59 @@
-/* #gameContainer {
-height: 420px;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: center;
-border: 7px solid blue;
-box-shadow: 0 6px 12 px 0 black (0,0,0,0.2);
-}
-.column {
-    border: 7px solid blue;
-    width: 59px;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    z-index:1 ;
-    position: relative;
-}
-.slot {
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    height: 48px;
-    border-radius: 50%;
-} */
-
-
 body {
-    align-items: center;
+    background-color: rgb(196, 153, 101);
+    text-align: center;
 }
+.board { 
+    border:2px solid black; 
+    display:flex; 
+    flex-wrap:wrap; 
+    height:276px; 
+    width:330px; 
+    background:rgba(101, 49, 4, 0.63);
+    margin: 0;
+    text-align: center;
+    } 
+    .board div { 
+    height:40px; 
+    width:40px; 
+    margin:3px;
+    border-radius:20px;
+    }
+    #container {
+        margin: auto;
+        width: 75%;
+    }
+    .square { 
+    background:antiquewhite; 
+    } 
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 2.5vh;
-}
-
-#board {
-    padding-top: 20pt;
-    width:400px;
-    height: 360px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-}
-
-.reset {
-background-color: plum;
-}
-
-.cell {
-    border: 1px dotted blue;
-    display: flex;
-}
-
-.piece {
-    border-radius: 50%;
-    background-color: red;
-   
-}
+    .player-one { 
+    background:rgb(89, 39, 6);
+    }
+    .player-two { 
+    background:rgb(196, 153, 101); 
+    }
+    .restart { 
+    background: rgb(209, 181, 111); 
+    cursor: pointer;
+    width: 25px; 
+    height: 12px; 
+    position: relative; 
+    top: 15px;
+    }
+    .currentPlayer {
+    font-weight: bold;
+    font-family: 'papyrus', fantasy;
+    color: rgb(101, 46, 10);
+    }
+    h1 {
+    font-family: 'papyrus', fantasy;
+    color: rgba(84, 44, 6, 0.852);  
+    font-size: 50px;
+    }
+    hr {
+        height: 0px;
+        width: 150px;
+        border-style: dotted none none;
+        border-color: antiquewhite;
+        border-width: 15px;
+    }
