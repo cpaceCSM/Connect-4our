@@ -1,6 +1,6 @@
 body {
     background-color: rgb(196, 153, 101);
-    text-align: center;
+    text-align: left;
 }
 .board { 
     border:2px solid black; 
@@ -10,8 +10,8 @@ body {
     width:330px; 
     background:rgba(101, 49, 4, 0.63);
     margin: 0;
-    text-align: center;
     } 
+
     .board div { 
     height:40px; 
     width:40px; 

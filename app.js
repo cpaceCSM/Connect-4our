@@ -80,6 +80,11 @@ let winningArray = [
 ]; 
 let currentPlayer=1 
 
+
+
+
+
+
 //the checkWon function
 function checkWon(){
     let squares =document.querySelectorAll(".board div")
